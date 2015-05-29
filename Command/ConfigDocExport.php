@@ -135,7 +135,8 @@ class ConfigDocExport extends ContainerAwareCommand
                 ->addAsColumn("description", ConfigI18nTableMap::DESCRIPTION)
             ->endUse()
             ->addAsColumn("name", ConfigTableMap::NAME)
-            ->select(["name", "title", "description"])
+            ->addAsColumn("default_value", ConfigTableMap::VALUE)
+            ->select(["name", "title", "description", "default_value"])
             ->find()
             ->toArray()
         ;

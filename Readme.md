@@ -14,7 +14,7 @@ This module exports Thelia configuration variables name, title and description i
 Add it in your main thelia composer.json file
 
 ```
-composer require thelia/config-doc-module:~1.0
+composer require thelia/config-doc-module:~1.1
 ```
 
 ## Usage
